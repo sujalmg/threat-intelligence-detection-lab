@@ -144,6 +144,49 @@ The complete implementation guide includes:
 - End-to-end detection pipeline validation
 
 ---
+---
+
+## Project Evidence
+
+### Splunk Endpoint Telemetry
+
+Windows endpoint telemetry is successfully forwarded to Splunk and searchable within the SIEM.
+
+![Splunk Endpoint Telemetry](docs/screenshots/splunk-endpoint-telemetry.jpg)
+
+---
+
+### Python CTI Automation Workflow
+
+The response script receives alert context from Splunk, extracts relevant observables, and prepares them for threat-intelligence processing.
+
+![Python CTI Workflow](docs/screenshots/python-cti-workflow.jpg)
+
+---
+
+### Threat Intelligence Enrichment in MISP
+
+Extracted indicators are enriched with external threat-intelligence context, including VirusTotal results, and stored within MISP.
+
+![MISP Threat Intelligence Enrichment](docs/screenshots/misp-threat-intelligence-enrichment.jpg)
+
+---
+
+### Automated Observable Management
+
+The workflow stores relevant observables such as source IP, destination IP, port, URL, and filename in MISP for correlation and investigation.
+
+![MISP Automated Observables](docs/screenshots/misp-automated-observables.png)
+
+---
+
+### TheHive Investigation Case
+
+Enriched detection context is transferred into TheHive, where an investigation case is created for analyst review.
+
+![TheHive Investigation Case](docs/screenshots/theHive-investigation-case.png)
+
+---
 
 ## Detection and Investigation Flow
 
