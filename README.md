@@ -1,5 +1,5 @@
 # Threat-Intelligence-Driven Detection Lab
-
+![Threat-Intelligence-Driven Detection Lab](docs/images/project-hero.png)
 A hands-on cybersecurity project demonstrating an end-to-end workflow for **detection, threat-intelligence enrichment, automation, investigation, and MITRE ATT&CK mapping**.
 
 The lab integrates **Splunk, MISP, TheHive, Python, AlienVault OTX, VirusTotal, and MITRE ATT&CK** to explore what happens after a SIEM detects suspicious activity.
@@ -7,6 +7,7 @@ The lab integrates **Splunk, MISP, TheHive, Python, AlienVault OTX, VirusTotal, 
 ---
 
 ## Architecture
+![Lab Architecture Overview](docs/images/lab-architecture-overview.png)
 
 ```text
 Endpoint
@@ -68,6 +69,7 @@ The result is a complete workflow showing how multiple defensive-security tools 
 ---
 
 ## Project Series
+![Threat Intelligence Detection Lab Four-Part Series](docs/images/project-series.png)
 
 ### Part 1 — Lab Setup, Environment, MISP & Splunk
 
