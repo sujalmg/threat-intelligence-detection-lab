@@ -144,6 +144,46 @@ The complete implementation guide includes:
 - End-to-end detection pipeline validation
 
 ---
+
+---
+
+## Code & Automation
+
+The repository includes sanitized versions of the automation components used in the lab.
+
+### Splunk → CTI Bridge
+
+[`cti_splunk_bridge.py`](scripts/cti_splunk_bridge.py)
+
+Reads Splunk alert results, validates the required fields, and passes the extracted observables to the CTI response workflow.
+
+### CTI Response Workflow
+
+[`cti_response.py`](scripts/cti_response.py)
+
+Processes alert context, creates or updates MISP events, adds relevant observables, and creates an investigation case in TheHive.
+
+### OTX → MISP Integration
+
+[`otx_to_misp.py`](scripts/otx_to_misp.py)
+
+Retrieves subscribed AlienVault OTX threat-intelligence indicators and imports supported indicators into MISP.
+
+### VirusTotal Enrichment
+
+[`vt_enrich_public.py`](scripts/vt_enrich_public.py)
+
+Performs VirusTotal file-hash enrichment and adds the resulting context to a MISP event using a safe validation artifact.
+
+### Script Documentation
+
+See the complete script documentation:
+
+[`scripts/README.md`](scripts/README.md)
+
+> API keys, passwords, tokens, and other credentials are intentionally excluded from this repository.
+
+---
 ---
 
 ## Project Evidence
